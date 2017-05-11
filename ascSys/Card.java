@@ -16,4 +16,10 @@ public class Card {
 	public Num getNum(){
 		return num;
 	}
+
+	@override
+	public String toString(){
+		return "Card Num : " + this.num.toString() + "Card Suit" + this.suit.toString()
+	}
+
 }

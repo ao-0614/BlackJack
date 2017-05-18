@@ -7,14 +7,14 @@ import org.junit.Test;
 
 public class CardTest {
 	public Card card = new Card(Suit.SPADE, Num.N8);
-	
+
 	@Test
 	public void CardクラスにスペードをセットしてgetSuitを受け取る() {
 
 		Suit expected = Suit.SPADE;
 		Suit actual = card.getSuit();
 		assertThat(actual, is(expected));
-		
+
 	}
 	@Test
 	public void CardクラスにN8をセットしてN8を受け取る() {
@@ -38,5 +38,11 @@ public class CardTest {
 		boolean actual = card.turnUpSide();
 		assertThat(actual, is(expected));
 	}
-	
+
+	@Test
+	public void CardクラスでupSideが裏の時toStringメソッドでxxが返ってくる() {
+		String expected = "Card Num: xx	Card Suit: xx";
+		String actual = card.toString();
+		assertThat(actual, is(expected));
+	}
 }

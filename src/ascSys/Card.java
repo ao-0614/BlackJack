@@ -28,6 +28,9 @@ public class Card {
 
 	@Override
 	public String toString(){
+		if(this.upside == false){
+			return "Card Num: xx	Card Suit: xx" ;
+		}
 		return "Card Num : " + this.num.toString() + "Card Suit" + this.suit.toString();
 	}
 

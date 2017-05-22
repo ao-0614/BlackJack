@@ -33,7 +33,7 @@ public class DeckTest {
 	public void DeckクラスにstaticメソッドでトランプをつくりpickUpCardメソッドを2回して２枚目のハートのAを確認() {
 		Deck trump =  Deck.createTrump();
 
-		Card card = trump.pickUpCard();
+		trump.pickUpCard();
 		Card cards = trump.pickUpCard();
 		Suit Suit_actual = cards.getSuit();
 		Num Num_actual = cards.getNum();

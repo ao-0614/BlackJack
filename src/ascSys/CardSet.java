@@ -19,5 +19,7 @@ public class CardSet {
 		return this.cards.size();
 	}
 
-
+	public List <Card> getCards(){
+		return this.cards;
+	}
 }

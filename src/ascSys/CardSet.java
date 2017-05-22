@@ -13,4 +13,11 @@ public class CardSet {
 	public Card pickUpCard(){
 		return this.cards.remove(0);
 	}
+
+	public int getSize() {
+		// TODO 自動生成されたメソッド・スタブ
+		return this.cards.size();
+	}
+
+
 }

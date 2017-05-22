@@ -5,7 +5,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ CardTest.class, NumTest.class })
+@SuiteClasses({ CardTest.class, DeckTest.class, NumTest.class })
+
 public class AllTests {
 
 }

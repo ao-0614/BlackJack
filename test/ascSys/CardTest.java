@@ -41,8 +41,17 @@ public class CardTest {
 
 	@Test
 	public void CardクラスでupSideが裏の時toStringメソッドでxxが返ってくる() {
-		String expected = "Card Num: xx	Card Suit: xx";
+		String expected = "Card Num: xx Card Suit: xx";
 		String actual = card.toString();
 		assertThat(actual, is(expected));
 	}
+
+	@Test
+	public void CardクラスでのコンストラクタでN8をセットしてgetscoreメソッドを使用し８を返す() {
+
+		int expected = 8;
+		int actual = card.getScore(Num.N8);
+		assertThat(actual, is(expected));
+	}
+
 }

@@ -4,8 +4,16 @@ public class Hand extends CardSet {
 
 	public int getTotalScore() {
 		int totalScore = 0;
-		for(Card card:super.getCards()){
-			totalScore += card.getScore(true);
+		boolean Achange = true;
+		for(Card cardA11:super.getCards()){
+			totalScore += cardA11.getScore(Achange);
+			if(totalScore > 21){
+				Achange = false;
+				totalScore = 0;
+				for(Card cardA1:super.getCards()){
+					totalScore += cardA1.getScore(Achange);
+				}
+			}
 		}
 		return totalScore;
 	}

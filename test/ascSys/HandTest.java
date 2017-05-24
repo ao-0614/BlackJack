@@ -58,7 +58,19 @@ public class HandTest {
 		int actual = hand.getTotalScore();
 		assertThat(actual, is(expected));
 	}
-	
-	
+
+	@Test
+	public void NumクラスにJKAからgetScorechangeAfalseで1返る() {
+		Card handcard1 = new Card(Suit.SPADE, Num.J);
+		Card handcard2 = new Card(Suit.SPADE, Num.K);
+		Card handcard3 = new Card(Suit.SPADE, Num.A);
+		hand.addCard(handcard1);
+		hand.addCard(handcard2);
+		hand.addCard(handcard3);
+
+		int expected = 21;
+		int actual = hand.getTotalScore();
+		assertThat(actual, is(expected));
+	}
 
 }

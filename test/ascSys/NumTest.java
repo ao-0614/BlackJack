@@ -85,15 +85,6 @@ public class NumTest {
 		int actual = sut.getScore(false);
 		assertThat(actual, is(expected));
 	}
-
-	@Test
-	public void NumクラスにKJAからgetScorechangeAfalseで1返る() {
-		Num sut = Num.A;
-
-		int expected = 1;
-		int actual = sut.getScore(false);
-		assertThat(actual, is(expected));
-	}
 }
 
 

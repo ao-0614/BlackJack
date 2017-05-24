@@ -7,6 +7,9 @@ public class Hand extends CardSet {
 		boolean Achange = true;
 		for(Card cardA11:super.getCards()){
 			totalScore += cardA11.getScore(Achange);
+			if(totalScore == 11){
+				Achange = false;
+			}
 			if(totalScore > 21){
 				Achange = false;
 				totalScore = 0;

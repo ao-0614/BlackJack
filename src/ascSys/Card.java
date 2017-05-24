@@ -29,13 +29,14 @@ public class Card {
 		return upside;
 	}
 
-	public int getScore(Num num){
-		return num.ordinal()+1;
+	public int getScore(boolean Achange){
+		return this.num.getScore(Achange);
 	}
 
 	@Override
 	public String toString(){
-		return "Card Num: " + this.num.toString() + " Card Suit: " + this.suit.toString();
+		if(this.upside)	return "Card Num: " + this.num.toString() + " Card Suit: " + this.suit.toString();
+		return "xx";
 	}
 
 }

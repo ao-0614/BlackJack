@@ -50,7 +50,7 @@ public class CardTest {
 	public void CardクラスでのコンストラクタでN8をセットしてgetscoreメソッドを使用し８を返す() {
 
 		int expected = 8;
-		int actual = card.getScore(Num.N8);
+		int actual = card.getScore(false);
 		assertThat(actual, is(expected));
 	}
 

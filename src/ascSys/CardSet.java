@@ -15,7 +15,6 @@ public class CardSet {
 	}
 
 	public int getSize() {
-		// TODO 自動生成されたメソッド・スタブ
 		return this.cards.size();
 	}
 
